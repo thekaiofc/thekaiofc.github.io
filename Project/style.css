@@ -1,0 +1,139 @@
+body {
+    margin: 0 auto;
+    max-width: 1120px;
+    font-family: "Poppins", sans-serif;
+}
+
+#cabecalho {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: hsl(260, 69%, 61%);
+}
+
+#div-home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 50px auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+}
+
+#div-home > * {
+    margin-bottom: 10px;
+}
+
+#div-home .text {
+    color: hsl(261, 7%, 37%);
+    text-align: center;
+    width: calc(50% - 20px);
+}
+
+#div-home .text button {
+    font-weight: bold;
+    display: inline-block;
+    background-color: hsl(261, 7%, 37%);
+    padding: 15px 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#div-home .text button:hover {
+    background-color: hsl(260, 69%, 61%);
+}
+
+#div-home .image {
+    width: calc(50% - 20px);
+    text-align: right;
+}
+
+#div-home img {
+    max-width: 100%;
+    width: 210px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#div-home h1 {
+    font-size: 3em;
+    color: hsl(260, 8%, 15%);
+}
+
+.lista-links a {
+    font-size: 2rem;
+    color: hsl(260, 8%, 15%);
+}
+
+.lista-links a:hover {
+    color: hsl(260, 69%, 61%);
+}
+
+.li-links {
+    list-style-type: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 100px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    #div-home {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #div-home .text,
+    #div-home .image {
+        width: 100%;
+        text-align: center;
+    }
+
+    #div-home img {
+        max-height: 80px;
+        width: auto;
+    }
+}
