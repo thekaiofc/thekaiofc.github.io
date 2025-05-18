@@ -89,7 +89,8 @@ nav ul li a:hover {
     max-width: 100%;
     width: 210px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 15px; /* cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra opcional */
 }
 
 #div-home h1 {
@@ -110,13 +111,33 @@ nav ul li a:hover {
     list-style-type: none;
     color: black;
 }
+.div-about {
+    display: flex;
+    align-items: center;       /* centraliza verticalmente */
+    justify-content: center;   /* centraliza horizontalmente */
+    flex-wrap: wrap;           /* permite empilhar no mobile */
+    gap: 2rem;                 /* espaçamento entre imagem e texto */
+    padding: 2rem;
+}
 .imagem-about img {
     display: block; /* remove espaçamento extra abaixo da imagem */
     margin: 0 auto; /* centraliza horizontalmente */
-    width: 400px; /* ajuste como quiser */
+    width: 100%;
+    max-width: 400px;
     height: auto; /* mantém a proporção */
     border-radius: 15px; /* cantos arredondados */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra opcional */
+    padding: auto;
+}
+.about-text{
+    color: hsl(261, 7%, 37%);
+    text-align: center;
+    max-width: 600px;
+    margin: 0;
+    padding: 1rem;
+}
+.about-text h2{
+    color: #000;
 }
 
 
