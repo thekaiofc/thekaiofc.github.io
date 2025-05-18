@@ -110,6 +110,15 @@ nav ul li a:hover {
     list-style-type: none;
     color: black;
 }
+.imagem-about img {
+    display: block; /* remove espaçamento extra abaixo da imagem */
+    margin: 0 auto; /* centraliza horizontalmente */
+    width: 400px; /* ajuste como quiser */
+    height: auto; /* mantém a proporção */
+    border-radius: 15px; /* cantos arredondados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* sombra opcional */
+}
+
 
 @media only screen and (max-width: 600px) {
     .logo img {
